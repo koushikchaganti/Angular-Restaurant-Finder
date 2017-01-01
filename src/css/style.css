@@ -1,0 +1,187 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: royalblue;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.movieflix {
+     font-family: "Agency FB";
+     color: red;
+     font-size: 4.33em;
+     font-weight: bold;
+ }
+
+.navbar {
+    border-radius: 0px;
+}
+
+.navbar-brand {
+    color: red;
+    font-size: 3.2em;
+    font-weight: bold;
+    font-family: "Agency FB";
+}
+
+.brandcolor {
+    color: red;
+}
+
+.container {
+    color: white;
+}
+@media(max-width:480px){
+    .container-fluid {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+.col-md-2 {
+    transform: translate3d(0px, 0px, 10px);
+}
+
+.col-md-2:hover {
+    transform: scale(1.16);
+    transition: transform 0.7s;
+
+}
+
+@media(max-width:480px){
+    .col-md-2 {
+        transform: translate3d(0px, 0px, 0px);
+    }
+
+    .col-md-2:hover{
+        transform: scale(1);
+        transition: transform 0s;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .col-md-2 {
+        transform: translate3d(0px, 0px, 0px);
+    }
+
+    .col-md-2:hover{
+        transform: scale(1);
+        transition: transform 0s;
+    }
+}
+
+.moviebanner{
+    width: 100%;
+    height: 200px;
+}
+
+.footer {
+    margin-top: 25px;
+}
+
+.top {
+    margin-top: 50px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.sorting-bar {
+    margin-top: 15px;
+    float: right;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+.sorting-bar-home {
+    margin-top: 15px;
+    float: right;
+    display: inline-block;
+}
+
+.right {
+    float: right;
+    margin-bottom: 25px;
+}
+
+.star{
+    display: inline;
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    float: left;
+}
+
+.star input[type=radio]{
+    display: none;
+}
+
+.star label{
+    direction: ltr;
+}
+
+.star label:before{
+    content:'\2605';
+    color: red;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.star label:hover:before,
+.star label:hover ~ label:before,
+.star input:checked ~ label:before{
+    color: yellow;
+}
+
+.thumbnail{
+    padding: 2px;
+}
+
+
+.col-md-offset-4{
+    padding: 15px;
+    background-color: #f3f3f3;
+    color: #0f0f0f;
+    border-radius: 4px;
+}
+
+img.media-object{
+    width:125px;
+    height: 125px;
+}
+
+.bottom{
+    margin-bottom: 60px;
+}
+
+.black{
+    color: #0f0f0f;
+}
+
+.media{
+    background-color: /*#a6e1ec*/#CF4646;
+    padding: 10px;
+    /*color: green;*/
+    border-radius: 5px;
+}
+
+#restaurant.row{
+    margin-top:15px;
+}
+
+#map {
+    width: 100%;
+    height: 600px;
+    background-color: grey;
+}
