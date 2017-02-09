@@ -1,0 +1,26 @@
+<div class="container top">
+    <div id="restaurant" class="row" ng-repeat="p in pfc.restaurants | startFrom:(pfc.currentPage - 1) * pfc.pageSize | limitTo: pfc.pageSize">
+        <div class="media">
+            <div class="media-left">
+                <a href="#">
+                    <img class="media-object" ng-src="{{pfc.img1 + p.photos[0].photo_reference}}" alt="...">
+                </a>
+            </div>
+            <div class="media-body">
+                <h4 class="media-heading">{{p.name}}</h4>
+                <p class="open-now"><strong>Open Now</strong>:<span ng-if="!p.opening_hours.open_now && p.opening_hours.open_now!= null">Closed</span>
+                    <span ng-if="p.opening_hours.open_now">Open</span>
+                    <span ng-if="p.opening_hours.open_now== null">N/A</span>
+                </p>
+                <p><strong>Rating</strong>:&nbsp;<span ng-if="p.rating"><span class="label label-success">{{p.rating}}</span> <span uib-rating ng-model="p.rating" max="5" read-only="true" aria-labelledby="default-rating"></span></span><span ng-if="p.rating== null">N/A</span></p>
+                <p><strong>Address</strong>:&nbsp;{{p.vicinity}}</p>
+            </div>
+            <div class="text-center" ng-if="pfc.restaurants.length<=0">
+                <h3>No Listings Found Related to your search</h3>
+            </div>
+        </div>
+    </div>
+    <div class="right" ng-show="pfc.restaurants.length>4">
+        <ul uib-pagination total-items="pfc.restaurants.length" ng-model="pfc.currentPage" items-per-page="pfc.pageSize"></ul>
+    </div>
+</div>

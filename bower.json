@@ -1,0 +1,37 @@
+{
+  "name": "restaurantfinder",
+  "description": "Nearest Restaurant Finder",
+  "main": "",
+  "authors": [
+    "koushik.chaganti@gmail.com"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "dependencies": {
+    "angular": "^1.6.1",
+    "angular-bootstrap": "^2.3.2",
+    "bootstrap": "^3.3.7",
+    "angular-ui-router": "^0.3.2",
+    "ngGeolocation": "^0.0.8",
+    "ngmap": "^1.17.8"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "dist/css/bootstrap.css",
+        "dist/js/bootstrap.js",
+        "dist/fonts/glyphicons-halflings-regular.eot",
+        "dist/fonts/glyphicons-halflings-regular.svg",
+        "dist/fonts/glyphicons-halflings-regular.ttf",
+        "dist/fonts/glyphicons-halflings-regular.woff",
+        "dist/fonts/glyphicons-halflings-regular.woff2"
+      ]
+    }
+  },
+  "devDependencies": {
+    "angular-bootstrap": "^2.3.2",
+    "bootstrap": "^3.3.7",
+    "angular-ui-router": "^0.3.2"
+  }
+}
