@@ -5,6 +5,14 @@
   "main": "index.js",
   "author": "koushik.chaganti@gmail.com",
   "license": "MIT",
+    "dependencies": {
+    "angular": "^1.6.1",
+    "angular-bootstrap": "^2.3.2",
+    "bootstrap": "^3.3.7",
+    "angular-ui-router": "^0.3.2",
+    "ngGeolocation": "^0.0.8",
+    "ngmap": "^1.17.8"
+  },
   "devDependencies": {
     "angular-bootstrap": "^0.12.2",
     "browser-sync": "^2.18.5",
